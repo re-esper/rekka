@@ -10,7 +10,7 @@ So I made this. It can run the RMMV games completely and correctly (neither Ejec
 
 ## Prebuilt Demo
 
-This demo has integrated Moghunter's [Master Demo MV](https://atelierrgss.wordpress.com/download-page-mv-01/) (An old version)
+This demo has integrated Moghunter's [Master Demo MV](https://atelierrgss.wordpress.com/download-page-mv-01/) (an old version)
 
 Downloads:  
 [Windows](https://github.com/re-esper/rekka/releases/download/0.1/rekka-demo-windows.zip)     
