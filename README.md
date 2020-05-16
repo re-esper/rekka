@@ -13,12 +13,24 @@ So I made this. It can run the RMMV games completely and correctly (neither Ejec
 This demo has integrated Moghunter's [Master Demo MV](https://atelierrgss.wordpress.com/download-page-mv-01/) (An old version)
 
 Downloads:  
-[Windows]()     
-[Android]()
+[Windows](https://github.com/re-esper/rekka/releases/download/0.1/rekka-demo-windows.zip)     
+[Android](https://github.com/re-esper/rekka/releases/download/0.1/rekka-demo-android.apk)
 
 Screenshots:
-<img src="https://github.com/re-esper/rekka/blob/master/screenshot/1.png" width="40%" height="40%">    <img src="https://github.com/re-esper/rekka/blob/master/screenshot/2.png" width="40%" height="40%">
 
+<img src="https://github.com/re-esper/rekka/blob/master/screenshot/1.png" width="40%" height="40%">    <img src="https://github.com/re-esper/rekka/blob/master/screenshot/2.png" width="40%" height="40%">  
+<img src="https://github.com/re-esper/rekka/blob/master/screenshot/3.png" width="40%" height="40%">    <img src="https://github.com/re-esper/rekka/blob/master/screenshot/4.png" width="40%" height="40%">  
+<img src="https://github.com/re-esper/rekka/blob/master/screenshot/5.png" width="40%" height="40%">    <img src="https://github.com/re-esper/rekka/blob/master/screenshot/6.png" width="40%" height="40%">  
+<img src="https://github.com/re-esper/rekka/blob/master/screenshot/7.png" width="40%" height="40%">    <img src="https://github.com/re-esper/rekka/blob/master/screenshot/8.png" width="40%" height="40%">  
+
+Note: The FPS show in screenshots ran on my i7-7700k and its Integrated gpu HD630.
+
+## Libraries
+
+Rekka mainly utilizes the following open-source libraries:
+- [SDL](https://github.com/SDL-mirror/SDL)
+- [SDL-gpu](https://github.com/grimfang4/sdl-gpu)
+- [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey)
 
 
 
