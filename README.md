@@ -1,6 +1,6 @@
-[DEPRECATED]
-
 # REKKA
+
+[DEPRECATED]
 
 This is my experimental project about 4~5 years ago, it is similar to [Ejecta](https://github.com/phoboslab/Ejecta) or cocoonjs, but its main goal is to speed up the RPG Maker MV games.
 
@@ -12,10 +12,12 @@ So I made this. It can run the RMMV games completely and correctly (neither Ejec
 
 This demo has integrated Moghunter's [Master Demo MV](https://atelierrgss.wordpress.com/download-page-mv-01/) (An old version)
 
-Downloads:  [Windows]()     [Android]()
+Downloads:  
+[Windows]()     
+[Android]()
 
 Screenshots:
-<img src="https://github.com/re-esper/rekka/tree/master/screenshot/1.png" width="50%" height="50%">    <img src="https://github.com/re-esper/rekka/tree/master/screenshot/2.png" width="50%" height="50%">
+<img src="https://github.com/re-esper/rekka/blob/master/screenshot/1.png" width="40%" height="40%">    <img src="https://github.com/re-esper/rekka/blob/master/screenshot/2.png" width="40%" height="40%">
 
 
 
