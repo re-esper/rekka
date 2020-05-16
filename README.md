@@ -6,7 +6,9 @@ This is my experimental project about 4~5 years ago, it is similar to [Ejecta](h
 
 I like RMMV very much, I also like mobile games. But, especially at that time, slightly complicated RMMV games did not run smoothly on mobile phones. For example, when I ran Moghunter's [Master Demo MV](https://atelierrgss.wordpress.com/download-page-mv-01/) on Xiaomi MI2S or MI3, I got <10 FPS on the map, even 1~3 FPS(MI3) in battle.
 
-So I made this. It can run the RMMV games completely and correctly (neither Ejecta or cocoonjs). It have a significant performance improvement in windows, but the improvement is limited on Android.
+So I made this. It can run the RMMV games completely and correctly (neither Ejecta or cocoonjs). It have a significant performance improvement in windows, but the improvement is limited on Android. No testing on iOS, but I think it will be worse.
+
+So I think it has no value to use. If I remake this today, I will use the full-platform vulkan + v8 solution (v8 is runable on iOS now), I believe I can get great performance improvement as I expect.
 
 ## Prebuilt Demo
 
