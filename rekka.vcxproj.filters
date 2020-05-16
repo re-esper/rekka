@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="sdlgpu\externals\stb_image\stb_image.c">
+      <Filter>sdlgpu\externals</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlgpu\externals\stb_image_write\stb_image_write.c">
+      <Filter>sdlgpu\externals</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlgpu\externals\glew\glew.c">
+      <Filter>sdlgpu\externals</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="rekka\core.cpp">
+      <Filter>rekka</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\scheduler.cpp">
+      <Filter>rekka</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\script_core.cpp">
+      <Filter>rekka</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\render\canvas.cpp">
+      <Filter>rekka\render</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\render\image.cpp">
+      <Filter>rekka\render</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\render\2d\path.cpp">
+      <Filter>rekka\render\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\render\2d\context_2d.cpp">
+      <Filter>rekka\render\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\render\canvas_context.cpp">
+      <Filter>rekka\render</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\utils.cpp">
+      <Filter>rekka</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\render\font_manager.cpp">
+      <Filter>rekka\render</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\system\local_storage.cpp">
+      <Filter>rekka\system</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlttf\SDL_ttf.cpp">
+      <Filter>sdlttf</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\render\2d\fill_object.cpp">
+      <Filter>rekka\render\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\render\extra.cpp">
+      <Filter>rekka\render</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\audio\audio.cpp">
+      <Filter>rekka\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\audio\audio_manager.cpp">
+      <Filter>rekka\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\system\xml_http_request.cpp">
+      <Filter>rekka\system</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\render\image_manager.cpp">
+      <Filter>rekka\render</Filter>
+    </ClCompile>
+    <ClCompile Include="rekka\system\file_loader.cpp">
+      <Filter>rekka\system</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlgpu\gpu_affine_transform.cpp">
+      <Filter>sdlgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlgpu\gpu_matrix.cpp">
+      <Filter>sdlgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlgpu\gpu_renderer.cpp">
+      <Filter>sdlgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlgpu\gpu_render_device.cpp">
+      <Filter>sdlgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlgpu\gpu_intf.cpp">
+      <Filter>sdlgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlgpu\gpu_shapes.cpp">
+      <Filter>sdlgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="sdlgpu\gpu_debug.cpp">
+      <Filter>sdlgpu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="sdlgpu">
+      <UniqueIdentifier>{20a80321-f574-47bf-80a4-eb308eb28bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdlgpu\externals">
+      <UniqueIdentifier>{52143e28-030b-41fe-890b-807efeb5dccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rekka">
+      <UniqueIdentifier>{b1473bfc-b189-4b8c-b71d-b66c14b7f987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rekka\audio">
+      <UniqueIdentifier>{fdcbb92d-5d97-4672-a0f0-4e6d24fc14df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rekka\system">
+      <UniqueIdentifier>{4880f010-044f-4842-a257-c8a97c1a92fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rekka\render">
+      <UniqueIdentifier>{dfbc3020-62b6-4820-b7da-9097e111ed89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rekka\render\2d">
+      <UniqueIdentifier>{d25abd7f-dfa4-43fd-8790-1055668b901c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rekka\render\webgl">
+      <UniqueIdentifier>{5141d890-873c-4fd1-84e5-f6db6749fc12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdlttf">
+      <UniqueIdentifier>{041ea932-43a7-450b-88ab-3f51f0e27bdc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdlgpu\externals\stb_image\stb_image.h">
+      <Filter>sdlgpu\externals</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\externals\stb_image_write\stb_image_write.h">
+      <Filter>sdlgpu\externals</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\externals\glew\GL\glew.h">
+      <Filter>sdlgpu\externals</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\externals\glew\GL\glxew.h">
+      <Filter>sdlgpu\externals</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\core.h">
+      <Filter>rekka</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\scheduler.h">
+      <Filter>rekka</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\script_core.h">
+      <Filter>rekka</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\rekka.h">
+      <Filter>rekka</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\render\canvas.h">
+      <Filter>rekka\render</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\render\image.h">
+      <Filter>rekka\render</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\render\2d\path.h">
+      <Filter>rekka\render\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\render\2d\context_2d.h">
+      <Filter>rekka\render\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\render\canvas_context.h">
+      <Filter>rekka\render</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\utils.h">
+      <Filter>rekka</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlttf\SDL_ttf.h">
+      <Filter>sdlttf</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\render\font_manager.h">
+      <Filter>rekka\render</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\system\local_storage.h">
+      <Filter>rekka\system</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\render\2d\fill_object.h">
+      <Filter>rekka\render\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\render\extra.h">
+      <Filter>rekka\render</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\audio\audio.h">
+      <Filter>rekka\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\audio\audio_manager.h">
+      <Filter>rekka\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\spider_object_wrap.h">
+      <Filter>rekka</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\system\xml_http_request.h">
+      <Filter>rekka\system</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\render\image_manager.h">
+      <Filter>rekka\render</Filter>
+    </ClInclude>
+    <ClInclude Include="rekka\system\file_loader.h">
+      <Filter>rekka\system</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\gpu_render_device.h">
+      <Filter>sdlgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\gpu_renderer.h">
+      <Filter>sdlgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\xgpu.h">
+      <Filter>sdlgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\xgpu_define.h">
+      <Filter>sdlgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\xgpu_affine_transform.h">
+      <Filter>sdlgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\xgpu_matrix.h">
+      <Filter>sdlgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlgpu\xgpu_debug.h">
+      <Filter>sdlgpu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sdlgpu\gpu_shader_gles2.inc">
+      <Filter>sdlgpu</Filter>
+    </None>
+    <None Include="sdlgpu\gpu_shader_opengl2.inc">
+      <Filter>sdlgpu</Filter>
+    </None>
+  </ItemGroup>
+</Project>

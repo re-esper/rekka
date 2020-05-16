@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ECEB5526-3908-4CC6-81E6-F683009CC36B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>rekka</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>rekka</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>REKKA_DESKTOP;SINGLE_BUFFERED;CURL_STATICLIB;GLEW_STATIC;XGPU_DISABLE_GLES;STBI_FAILURE_USERMSG;WIN32;_CRT_SECURE_NO_WARNINGS;_CONSOLE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;rekka;spidermonkey\include;sdlgpu;sdlgpu\externals\glew\gl;sdlgpu\externals\stb_image;sdlgpu\externals\stb_image_write;sdlttf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4068;4101;4800;4251;4244;4099;4083;4700;4305;4996;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2_mixer.lib;SDL2.lib;mozjs-45.lib;freetype271.lib;libcurl.lib;glu32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>REKKA_DESKTOP;SINGLE_BUFFERED;CURL_STATICLIB;GLEW_STATIC;XGPU_DISABLE_GLES;STBI_FAILURE_USERMSG;WIN32;_CRT_SECURE_NO_WARNINGS;_CONSOLE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;rekka;spidermonkey\include;sdlgpu;sdlgpu\externals\glew\gl;sdlgpu\externals\stb_image;sdlgpu\externals\stb_image_write;sdlttf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4068;4101;4800;4251;4244;4099;4083;4700;4305;4996;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2_mixer.lib;SDL2.lib;mozjs-45.lib;freetype271.lib;libcurl.lib;glu32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="rekka\audio\audio.cpp" />
+    <ClCompile Include="rekka\audio\audio_manager.cpp" />
+    <ClCompile Include="rekka\core.cpp" />
+    <ClCompile Include="rekka\render\2d\context_2d.cpp" />
+    <ClCompile Include="rekka\render\2d\fill_object.cpp" />
+    <ClCompile Include="rekka\render\2d\path.cpp" />
+    <ClCompile Include="rekka\render\canvas.cpp" />
+    <ClCompile Include="rekka\render\canvas_context.cpp" />
+    <ClCompile Include="rekka\render\font_manager.cpp" />
+    <ClCompile Include="rekka\render\image.cpp" />
+    <ClCompile Include="rekka\render\extra.cpp" />
+    <ClCompile Include="rekka\render\image_manager.cpp" />
+    <ClCompile Include="rekka\scheduler.cpp" />
+    <ClCompile Include="rekka\script_core.cpp" />
+    <ClCompile Include="rekka\system\file_loader.cpp" />
+    <ClCompile Include="rekka\system\local_storage.cpp" />
+    <ClCompile Include="rekka\system\xml_http_request.cpp" />
+    <ClCompile Include="rekka\utils.cpp" />
+    <ClCompile Include="sdlgpu\externals\glew\glew.c" />
+    <ClCompile Include="sdlgpu\externals\stb_image\stb_image.c" />
+    <ClCompile Include="sdlgpu\externals\stb_image_write\stb_image_write.c" />
+    <ClCompile Include="sdlgpu\gpu_debug.cpp" />
+    <ClCompile Include="sdlgpu\gpu_renderer.cpp" />
+    <ClCompile Include="sdlgpu\gpu_render_device.cpp" />
+    <ClCompile Include="sdlgpu\gpu_intf.cpp" />
+    <ClCompile Include="sdlgpu\gpu_affine_transform.cpp" />
+    <ClCompile Include="sdlgpu\gpu_matrix.cpp" />
+    <ClCompile Include="sdlgpu\gpu_shapes.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sdlttf\SDL_ttf.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rekka\audio\audio.h" />
+    <ClInclude Include="rekka\audio\audio_manager.h" />
+    <ClInclude Include="rekka\core.h" />
+    <ClInclude Include="rekka\rekka.h" />
+    <ClInclude Include="rekka\render\2d\context_2d.h" />
+    <ClInclude Include="rekka\render\2d\fill_object.h" />
+    <ClInclude Include="rekka\render\2d\path.h" />
+    <ClInclude Include="rekka\render\canvas.h" />
+    <ClInclude Include="rekka\render\canvas_context.h" />
+    <ClInclude Include="rekka\render\font_manager.h" />
+    <ClInclude Include="rekka\render\image.h" />
+    <ClInclude Include="rekka\render\extra.h" />
+    <ClInclude Include="rekka\render\image_manager.h" />
+    <ClInclude Include="rekka\scheduler.h" />
+    <ClInclude Include="rekka\script_core.h" />
+    <ClInclude Include="rekka\spider_object_wrap.h" />
+    <ClInclude Include="rekka\system\file_loader.h" />
+    <ClInclude Include="rekka\system\local_storage.h" />
+    <ClInclude Include="rekka\system\xml_http_request.h" />
+    <ClInclude Include="rekka\utils.h" />
+    <ClInclude Include="sdlgpu\externals\glew\GL\glew.h" />
+    <ClInclude Include="sdlgpu\externals\glew\GL\glxew.h" />
+    <ClInclude Include="sdlgpu\externals\stb_image\stb_image.h" />
+    <ClInclude Include="sdlgpu\externals\stb_image_write\stb_image_write.h" />
+    <ClInclude Include="sdlgpu\gpu_renderer.h" />
+    <ClInclude Include="sdlgpu\gpu_render_device.h" />
+    <ClInclude Include="sdlgpu\xgpu.h" />
+    <ClInclude Include="sdlgpu\xgpu_affine_transform.h" />
+    <ClInclude Include="sdlgpu\xgpu_define.h" />
+    <ClInclude Include="sdlgpu\xgpu_debug.h" />
+    <ClInclude Include="sdlgpu\xgpu_matrix.h" />
+    <ClInclude Include="sdlttf\SDL_ttf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sdlgpu\gpu_shader_gles2.inc" />
+    <None Include="sdlgpu\gpu_shader_opengl2.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
